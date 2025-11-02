@@ -15,7 +15,7 @@ data:
       - job_name: 'spring-petclinic'
         metrics_path: '/actuator/prometheus'
         static_configs:
-          - targets: ['petclinic:8080']
+          - targets: ['spring-svc.default.svc.cluster.local:80']
 
       - job_name: 'mysql-exporter'
         static_configs:
