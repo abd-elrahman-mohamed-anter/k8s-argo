@@ -29,7 +29,7 @@ spec:
             secretKeyRef:
               key: password
               name: demo-db
-        image: your image
+        image: abdoomohamed/springpet-app
         imagePullPolicy: IfNotPresent
         name: app
         ports:
